@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:nameless_secret_project/ProfilePage.dart';
-import 'package:nameless_secret_project/MainPage.dart';
-import 'package:nameless_secret_project/SearchPage.dart';
+import 'package:nameless_secret_project/profile_page.dart';
+import 'package:nameless_secret_project/main_page.dart';
+import 'package:nameless_secret_project/search_page.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
