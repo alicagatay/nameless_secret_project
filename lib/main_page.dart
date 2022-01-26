@@ -57,28 +57,58 @@ class MainPage extends StatelessWidget {
               ),
             ],
           ),
+          fit: FlexFit.tight,
           flex: 2,
         ),
         Flexible(
           child: Container(
             color: Colors.green,
             child: Column(
-              children: <Widget>[
+              children: const <Widget>[
                 Flexible(
-                  child: Container(
-                    color: Colors.red,
+                  child: Center(
+                    child: Card(
+                      color: Colors.white,
+                      margin: EdgeInsets.all(30),
+                      child: Center(
+                        child: Text(
+                          "Image comes here",
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 30,
+                          ),
+                        ),
+                      ),
+                    ),
                   ),
+                  fit: FlexFit.tight,
                   flex: 2,
                 ),
                 Flexible(
-                  child: Container(
-                    color: Colors.blue,
+                  child: Card(
+                    color: Colors.white,
+                    margin: EdgeInsets.all(10),
+                    child: Center(
+                      child: Text(
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                        "Quisque congue, turpis sed aliquet sollicitudin, velit orci accumsan justo, a facilisis arcu diam et lorem. "
+                        "Fusce ac lectus magna. Nullam mollis aliquet dolor dapibus sollicitudin. "
+                        "Aliquam lobortis, ipsum a accumsan sollicitudin, sapien dolor tristique risus, eu tempus lacus erat id turpis. "
+                        "Etiam a venenatis risus.",
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: 15,
+                        ),
+                      ),
+                    ),
                   ),
+                  fit: FlexFit.tight,
                   flex: 1,
                 )
               ],
             ),
           ),
+          fit: FlexFit.tight,
           flex: 7,
         ),
       ],
