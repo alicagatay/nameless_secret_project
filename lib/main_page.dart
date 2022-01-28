@@ -16,7 +16,7 @@ class MainPage extends StatelessWidget {
               Container(
                 decoration: const BoxDecoration(
                   shape: BoxShape.circle,
-                  color: Colors.green,
+                  color: Colors.teal,
                 ),
                 width: 80,
                 child: const Center(
@@ -30,7 +30,7 @@ class MainPage extends StatelessWidget {
               Container(
                 decoration: const BoxDecoration(
                   shape: BoxShape.circle,
-                  color: Colors.green,
+                  color: Colors.teal,
                 ),
                 width: 80,
                 child: const Center(
@@ -44,7 +44,7 @@ class MainPage extends StatelessWidget {
               Container(
                 decoration: const BoxDecoration(
                   shape: BoxShape.circle,
-                  color: Colors.green,
+                  color: Colors.teal,
                 ),
                 width: 80,
                 child: const Center(
@@ -61,52 +61,49 @@ class MainPage extends StatelessWidget {
           flex: 2,
         ),
         Flexible(
-          child: Container(
-            color: Colors.green,
-            child: Column(
-              children: const <Widget>[
-                Flexible(
-                  child: Center(
-                    child: Card(
-                      color: Colors.white,
-                      margin: EdgeInsets.all(30),
-                      child: Center(
-                        child: Text(
-                          "Image comes here",
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontSize: 30,
-                          ),
-                        ),
-                      ),
-                    ),
-                  ),
-                  fit: FlexFit.tight,
-                  flex: 2,
-                ),
-                Flexible(
+          child: Column(
+            children: const <Widget>[
+              Flexible(
+                child: Center(
                   child: Card(
-                    color: Colors.white,
-                    margin: EdgeInsets.all(10),
+                    color: Colors.white38,
+                    margin: EdgeInsets.all(30),
                     child: Center(
                       child: Text(
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
-                        "Quisque congue, turpis sed aliquet sollicitudin, velit orci accumsan justo, a facilisis arcu diam et lorem. "
-                        "Fusce ac lectus magna. Nullam mollis aliquet dolor dapibus sollicitudin. "
-                        "Aliquam lobortis, ipsum a accumsan sollicitudin, sapien dolor tristique risus, eu tempus lacus erat id turpis. "
-                        "Etiam a venenatis risus.",
+                        "Image comes here",
                         style: TextStyle(
                           color: Colors.black,
-                          fontSize: 15,
+                          fontSize: 30,
                         ),
                       ),
                     ),
                   ),
-                  fit: FlexFit.tight,
-                  flex: 1,
-                )
-              ],
-            ),
+                ),
+                fit: FlexFit.tight,
+                flex: 2,
+              ),
+              Flexible(
+                child: Card(
+                  color: Colors.white38,
+                  margin: EdgeInsets.all(10),
+                  child: Center(
+                    child: Text(
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
+                      "Quisque congue, turpis sed aliquet sollicitudin, velit orci accumsan justo, a facilisis arcu diam et lorem. "
+                      "Fusce ac lectus magna. Nullam mollis aliquet dolor dapibus sollicitudin. "
+                      "Aliquam lobortis, ipsum a accumsan sollicitudin, sapien dolor tristique risus, eu tempus lacus erat id turpis. "
+                      "Etiam a venenatis risus.",
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 15,
+                      ),
+                    ),
+                  ),
+                ),
+                fit: FlexFit.tight,
+                flex: 1,
+              )
+            ],
           ),
           fit: FlexFit.tight,
           flex: 7,
