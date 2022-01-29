@@ -37,13 +37,53 @@ class ProfilePage extends StatelessWidget {
                       ),
                     ),
                   ),
-                   Container(
+                  Container(
+                    decoration: BoxDecoration(
+                      shape: BoxShape.rectangle,
+                      color: Colors.teal,
+                      borderRadius: BorderRadius.circular(20),
+                    ),
                     margin: const EdgeInsets.all(30),
                     height: 80,
-                    color: Colors.teal,
                     child: const Center(
                       child: Text(
-                        "My stuff",
+                        "My Wallet",
+                        style: TextStyle(
+                          fontSize: 25,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      shape: BoxShape.rectangle,
+                      color: Colors.teal,
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    margin: const EdgeInsets.all(30),
+                    height: 80,
+                    child: const Center(
+                      child: Text(
+                        "My Stuff",
+                        style: TextStyle(
+                          fontSize: 25,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    decoration: BoxDecoration(
+                      shape: BoxShape.rectangle,
+                      color: Colors.teal,
+                      borderRadius: BorderRadius.circular(20),
+                    ),
+                    margin: const EdgeInsets.all(30),
+                    height: 80,
+                    child: const Center(
+                      child: Text(
+                        "Messages",
                         style: TextStyle(
                           fontSize: 25,
                           color: Colors.white,
