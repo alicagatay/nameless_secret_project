@@ -8,7 +8,7 @@ class MainPage extends StatelessWidget {
     return Center(
         child: Column(
       children: <Widget>[
-        Flexible(
+        Expanded(
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -57,13 +57,12 @@ class MainPage extends StatelessWidget {
               ),
             ],
           ),
-          fit: FlexFit.tight,
           flex: 2,
         ),
-        Flexible(
+        Expanded(
           child: Column(
             children: const <Widget>[
-              Flexible(
+              Expanded(
                 child: Center(
                   child: Card(
                     color: Colors.white38,
@@ -79,10 +78,9 @@ class MainPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                fit: FlexFit.tight,
                 flex: 2,
               ),
-              Flexible(
+              Expanded(
                 child: Card(
                   color: Colors.white38,
                   margin: EdgeInsets.all(10),
@@ -100,12 +98,10 @@ class MainPage extends StatelessWidget {
                     ),
                   ),
                 ),
-                fit: FlexFit.tight,
                 flex: 1,
               )
             ],
           ),
-          fit: FlexFit.tight,
           flex: 7,
         ),
       ],
