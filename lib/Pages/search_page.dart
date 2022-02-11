@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class SearchPage extends StatefulWidget {
   const SearchPage({Key? key}) : super(key: key);
 
@@ -17,13 +16,13 @@ class _SearchPageState extends State<SearchPage> {
         Align(
           alignment: Alignment.topCenter,
           child: InkWell(
-            onTap: (){
+            onTap: () {
               setState(() {
                 searchController.clear();
               });
             },
             child: Container(
-              padding: const EdgeInsets.only(top: 50),
+              padding: const EdgeInsets.only(top: 50, left: 10, right: 10),
               child: TextField(
                 style: const TextStyle(
                   color: Colors.black,
@@ -32,8 +31,7 @@ class _SearchPageState extends State<SearchPage> {
                 controller: searchController,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
-                    borderRadius: BorderRadius.circular(40)
-                  ),
+                      borderRadius: BorderRadius.circular(40)),
                   hintText: "Search",
                   hintStyle: const TextStyle(
                     color: Colors.black,
@@ -48,4 +46,3 @@ class _SearchPageState extends State<SearchPage> {
     );
   }
 }
-
